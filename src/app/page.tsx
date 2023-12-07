@@ -1,4 +1,5 @@
-import { ClientComponent } from '@/components/ClientComponent'
+import { ClientComponentWillOptimize } from '@/components/ClientComponentWillOptimize'
+import { ClientComponentWontOptimize } from '@/components/ClientComponentWontOptimize'
 import Image from 'next/image'
 
 const BIG_PROP= `Banh mi yr fanny pack sus, pour-over letterpress food truck marxism coloring book sartorial cardigan lomo lyft tumblr cloud bread. Vinyl sartorial umami, bodega boys photo booth food truck freegan 8-bit polaroid hashtag stumptown hell of 90's cronut keytar. Meh crucifix beard bodega boys portland, you probably haven't heard of them YOLO. Quinoa typewriter lo-fi, copper mug heirloom glossier hexagon neutral milk hotel fam palo santo knausgaard af leggings. VHS pinterest twee biodiesel, tacos small batch street art scenester church-key art party.
@@ -14,7 +15,8 @@ Direct trade marfa typewriter, semiotics authentic marxism hella fingerstache ch
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <ClientComponent name="TEST" description={BIG_PROP} />
+      <ClientComponentWillOptimize name="TEST" description={BIG_PROP} />
+      <ClientComponentWontOptimize name="TEST" description={BIG_PROP} />
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
