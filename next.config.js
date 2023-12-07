@@ -6,5 +6,5 @@ const nextConfig = {
 
 module.exports = million.next(
   nextConfig
-, { auto: { rsc: true } }
+, { auto: { rsc: true, threshold: 0.0000000001 } }
 )
