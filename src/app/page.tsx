@@ -1,12 +1,20 @@
 import { ClientComponent } from '@/components/ClientComponent'
 import Image from 'next/image'
 
+const BIG_PROP= `Banh mi yr fanny pack sus, pour-over letterpress food truck marxism coloring book sartorial cardigan lomo lyft tumblr cloud bread. Vinyl sartorial umami, bodega boys photo booth food truck freegan 8-bit polaroid hashtag stumptown hell of 90's cronut keytar. Meh crucifix beard bodega boys portland, you probably haven't heard of them YOLO. Quinoa typewriter lo-fi, copper mug heirloom glossier hexagon neutral milk hotel fam palo santo knausgaard af leggings. VHS pinterest twee biodiesel, tacos small batch street art scenester church-key art party.
 
+Pabst poutine normcore ramps skateboard, listicle blackbird spyplane organic unicorn locavore retro pickled jianbing vegan. Poke salvia blog, prism semiotics asymmetrical 3 wolf moon fam. Enamel pin big mood artisan la croix authentic yes plz normcore tofu heirloom sus master cleanse gochujang. Post-ironic shabby chic solarpunk cronut. Williamsburg chicharrones sustainable health goth tousled flexitarian narwhal vegan lumbersexual.
+
+Normcore enamel pin yes plz quinoa. Ascot mukbang XOXO skateboard etsy big mood. Praxis 8-bit thundercats raw denim, keytar squid master cleanse. XOXO copper mug woke Brooklyn, distillery literally selvage hashtag chia. Unicorn poke health goth listicle street art ugh sriracha enamel pin art party.
+
+Intelligentsia tacos bicycle rights gentrify unicorn, raw denim Brooklyn try-hard post-ironic. Chartreuse prism echo park leggings, fashion axe chia XOXO umami fanny pack jawn lomo keytar listicle VHS. Pickled letterpress palo santo, four dollar toast portland literally pop-up tumeric iceland fingerstache solarpunk neutral milk hotel organic man bun biodiesel. Chartreuse kickstarter pabst, pickled hoodie retro disrupt helvetica.
+
+Direct trade marfa typewriter, semiotics authentic marxism hella fingerstache chillwave. PBR&B bruh Brooklyn, vaporware YOLO tacos fanny pack occupy coloring book street art DIY pour-over prism. Marfa kinfolk offal cronut disrupt godard gastropub. Butcher banh mi venmo lumbersexual. Occupy organic pour-over fixie photo booth. XOXO butcher occupy try-hard, single-origin coffee offal lomo fam VHS art party vexillologist la croix. Shaman meh tattooed jianbing slow-carb occupy authentic etsy wolf tumblr tbh.`
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <ClientComponent name="TEST" />
+      <ClientComponent name="TEST" description={BIG_PROP} />
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
